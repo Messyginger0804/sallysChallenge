@@ -1,0 +1,64 @@
+body {
+    font-size: 16px;
+    background-color: #eeeeda;
+}
+
+.fruit-box--inner {
+    border-radius: 20px;
+    background-color: #ffe;
+}
+
+.container {
+    /* background-color: blue; */
+}
+
+#fruits {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fruit-box {
+
+    width: 150px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 15px;
+    /* Adjust the border-radius value for more or less curvature */
+    overflow: hidden;
+    position: relative;
+}
+
+.white-card {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transform: skew(-15deg);
+}
+
+.fruit-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* .container-div {
+    position: relative;
+    display: inline-block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+} */
