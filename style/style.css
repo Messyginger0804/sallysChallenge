@@ -3,42 +3,35 @@ body {
     background-color: #eeeeda;
 }
 
-.fruit-box--inner {
-    border-radius: 20px;
-    background-color: #ffe;
-}
-
-.container {
-    /* background-color: blue; */
+.container-div {
+    width: 170px;
+    margin: 50px;
 }
 
 #fruits {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    /* margin-left: 10px; */
 }
 
 .fruit-box {
-
-    width: 150px;
     text-align: center;
-    margin: 10px;
+    margin: 1px;
     padding: 10px;
     border-radius: 15px;
-    /* Adjust the border-radius value for more or less curvature */
     overflow: hidden;
     position: relative;
 }
 
-.white-card {
-    background-color: white;
+.overlay {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     z-index: -1;
-    transform: skew(-15deg);
+    box-shadow: 10px 10px 5px;
 }
 
 .fruit-image {
@@ -48,17 +41,3 @@ body {
     object-fit: cover;
     margin-bottom: 10px;
 }
-
-/* .container-div {
-    position: relative;
-    display: inline-block;
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-} */

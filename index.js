@@ -16,44 +16,29 @@ document.addEventListener("DOMContentLoaded", function () {
     const fruitsContainer = document.getElementById('fruits');
 
     fruits.forEach(fruit => {
-
-
-
         const containerDiv = document.createElement('div');
         containerDiv.classList.add('container-div');
 
-
-
         const fruitDiv = document.createElement('div');
         fruitDiv.classList.add('fruit-box');
-        fruitDiv.style.backgroundColor = fruit.color;
-
-
-
+        fruitDiv.style.backgroundColor = 'white';
 
         const overlayDiv = document.createElement('div');
         overlayDiv.classList.add('overlay');
-        overlayDiv.style.backgroundColor = 'white';
-
-
-
 
         const fruitImage = document.createElement('img');
         fruitImage.classList.add('fruit-image');
         fruitImage.src = `img/${fruit.id}.png`;
 
-
         const fruitName = document.createElement('p');
         fruitName.textContent = fruit.name;
-
-
-
 
         if (fruit.name.toLowerCase().includes('fruit')) {
             fruitDiv.style.fontWeight = 'bold';
         }
 
-
+        const shadowColor = fruit.color;
+        fruitDiv.style.boxShadow = `0 0 5px 2px ${shadowColor}, 10px 10px 5px ${shadowColor}`;
 
         containerDiv.appendChild(fruitDiv);
         containerDiv.appendChild(overlayDiv);
@@ -62,5 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
         fruitsContainer.appendChild(containerDiv);
     });
 });
+
 
 console.log(fruits);
